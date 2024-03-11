@@ -237,20 +237,37 @@ const projects = [
     name: "organized trips",
     description:
       "Analysis and development of an online platform integrating booking, participation in organized trips, and comprehensive trip management .",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
+      tags: [
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Django",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Html",
+          color: "orange-text-gradient",
+        },
+        
+        {
+          name: "Css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Java Script",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Boostrap",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Google Api",
+          color: "blue-text-gradient",
+        },
+      ],
     image: Riss,
     source_code_link: "https://github.com/AdamSe22",
   },
