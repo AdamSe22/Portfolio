@@ -30,15 +30,22 @@ import Django from "../assets/tech/Django-Logo.png"
 import Cars from "../assets/Cars2.png"
 import Learn from "../assets/E-learn.jpg"
 import Riss from "../assets/Riss.png"
-
+import Unice from "../assets/unice.png"
+import Kedio from "../assets/kedio_logo - Copy (1).png"
+import Prediction from "../assets/prediction.png"
+import Kedio_stage from "../assets/kedio.png"
 export const navLinks = [
   {
     id: "about",
     title: "About",
   },
   {
-    id: "work",
+    id: "experience",
     title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -48,19 +55,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
-    title: "Mobile Developer",
+    title: "Artificial Intelligence",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Big data",
     icon: backend,
   },
   {
-    title: "Database Manager",
+    title: "Mobile App Developer",
     icon: creator,
   },
 ];
@@ -120,56 +127,63 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Ado.Net | Desktop Application",
-    company_name: "ISTA Hay chmaou : Final Year Project",
-    icon: OFPPT_Logo,
-    iconBg: "#FFFF",
-    date: "March 2022 - April 2022",
-    points: [
-      "Development of a car rental application using ADO.",
-      "Embarking on the development journey of a cutting-edge car rental application integrated with ADO.Net",
-      "facilitating seamless data management for Administrator.",
-    ],
-  },
-  {
-    title: "Ado.Net | Desktop Application",
+    title: "Vehicle Registration Management",
     company_name: "NARSA : End-of-Studies Internship",
     icon: Narsa,
     iconBg: "#E6DEDD",
     date: "April 2022 - May 2022",
     points: [
       "Development of an application for permit management and vehicle registration card consultation.",
-      " leveraging ADO  for streamlined data handling and enhanced user accessibility.",
-      "facilitating seamless data management and enhanced user experience.",
-      
+      "Leveraging ADO for streamlined data handling and enhanced user accessibility.",
+      "Facilitating seamless data management and enhanced user experience.",
     ],
   },
   {
-    title: "Django | Web Application",
-    company_name: "Emsi : End-of-Year Project",
-    icon: Emsi,
-    iconBg: "#FFFF",
-    date: "April 2023 - Jan 2023",
-    points: [
-      "Design and implementation of an online learning platform using Django and Machine Learning.",
-      "Conceiving and executing a cutting-edge online learning platform.",
-      "harnessing the power of Django and Machine Learning for an intelligent and personalized educational experience.",
-    ],
-  },
-  {
-    title: "Django | Web Application",
-    company_name: "Rissala Travel : End-of-Year Internship ",
+    title: "Organized Trip Management",
+    company_name: "Rissala Travel : End-of-Year Internship",
     icon: Rissala,
     iconBg: "#FFFF",
     date: "Aug 2023 - Sep 2023",
     points: [
       "Analysis and development of an online platform integrating booking, participation in organized trips, and comprehensive trip management using Django.",
       "Exploring innovative solutions to enhance user experience and streamline travel logistics within a robust Django framework.",
-      
     ],
   },
+  {
+    title: "Internship Management with AI Integration",
+    company_name: "Kedio Sarl : End-of-Year Internship",
+    icon: Kedio,
+    iconBg: "#FFFF",
+    date: "Jul 2024 - Sep 2024",
+    points: [
+      "Conception and development of an internship management application with AI integration.",
+      "Utilizing deep learning, NLP, LLM model, Django Rest Framework, and Vue.js.",
+    ],
+  }
 ];
-
+const formations = [
+  
+  
+  {
+    institut : 'Université cote d’azur',
+    date: '2024 - 2025',
+    icon : Unice,
+    iconBg: "#FFFF",
+    diplome: 'Master M2 in artificial intelligence'
+  },{
+    institut: 'Ecole Marocaine des Sciences de l’Ingénieur',
+    date: '2020 - 2025',
+    icon : Emsi,
+    iconBg: "#FFFF",
+    diplome: 'State Engineer in Computer Science and Networks, MIAGE option'
+  },{ 
+    institut: 'ISTA Hay Chmaou', 
+    date: '2020 - 2022', 
+    iconBg: "#FFFF",
+    diplome: 'Specialized Technician in Computer Development' ,
+    icon : OFPPT_Logo
+  },
+];
 const testimonials = [
 ];
 
@@ -177,7 +191,7 @@ const projects = [
   {
     name: "Car Rent",
     description:
-      "Desktop-App Embarking on the development journey of a cutting-edge car rental to facilitating seamless data management for Administrator. ",
+      "Desktop-App Embarking on the development journey of a cutting-edge car rental to facilitating seamless data management for Administrator.",
     tags: [
       {
         name: "C#",
@@ -198,7 +212,7 @@ const projects = [
   {
     name: "E-Learning",
     description:
-      "Conceiving and executing a cutting-edge online learning platform  for an intelligent and personalized educational experience",
+      "Conceiving and executing a cutting-edge online learning platform for an intelligent and personalized educational experience.",
     tags: [
       {
         name: "Python",
@@ -212,7 +226,6 @@ const projects = [
         name: "Html",
         color: "orange-text-gradient",
       },
-      
       {
         name: "Css",
         color: "pink-text-gradient",
@@ -234,43 +247,108 @@ const projects = [
     source_code_link: "https://github.com/AdamSe22",
   },
   {
-    name: "organized trips",
+    name: "Organized Trips",
     description:
-      "Analysis and development of an online platform integrating booking, participation in organized trips, and comprehensive trip management .",
-      tags: [
-        {
-          name: "Python",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Django",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Html",
-          color: "orange-text-gradient",
-        },
-        
-        {
-          name: "Css",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Java Script",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Boostrap",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Google Api",
-          color: "blue-text-gradient",
-        },
-      ],
+      "Analysis and development of an online platform integrating booking, participation in organized trips, and comprehensive trip management.",
+    tags: [
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Html",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Java Script",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Boostrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Google Api",
+        color: "blue-text-gradient",
+      },
+    ],
     image: Riss,
     source_code_link: "https://github.com/AdamSe22",
   },
+  {
+    name: "Prediction and Recommendation of Future Sales for an E-commerce Site",
+    description:
+      "Generating personalized recommendations for clients based on their preferences and similar articles viewed.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Flask.Net",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NLP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: Prediction,
+    source_code_link: "https://github.com/AdamSe22",
+  },
+  {
+    name: "Internship Management with AI Integration",
+    description:
+      "Development of an internship management application with AI integration to help students find internships quickly based on information extracted from their CVs and to organize application requests for companies efficiently.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NLP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LLM model",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Django Rest Framework",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vue.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Kedio_stage,
+    source_code_link: "https://github.com/AdamSe22",
+  }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects , formations };

@@ -44,8 +44,7 @@ const Navbar = () => {
         >
           
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adam Serghini &nbsp;
-            <span className='sm:block hidden'> | engineering student</span>
+            <span className='sm:block hidden'> engineering & Master student </span>
           </p>
         </Link>
 
