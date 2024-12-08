@@ -8,7 +8,9 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-import Services from './services';
+
+import Formation from './Formation';
+
 
 
 export {
@@ -25,5 +27,5 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Services
+  Formation
 };
