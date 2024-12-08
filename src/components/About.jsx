@@ -2,7 +2,7 @@ import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import Mee from "../assets/Mee.jpeg";
-import CV from "../assets/Adam Serghini CV (2).pdf";
+import CV from "../assets/Adam Serghini CV (3).pdf";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -40,41 +40,37 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()} className="flex items-center">
-  <div>
-    <p className={styles.sectionSubText}>Introduction</p>
-    <h2 className={styles.sectionHeadText}>Overview.</h2>
-    <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I am a passionate student developer actively learning and exploring
-        different programming languages and frameworks. I enjoy tackling coding
-        challenges. Continuous learning and staying up-to-date with industry and
-        technology trends are important to me.
-      </motion.p>
-      {/* Bouton pour télécharger le CV */}
-      <div className="mt-4">
-      <a href={CV} download="Adam Serghini CV (2).pdf">
-        <button type="submit" className="bg-tertiary py-3 px-8 rounded-xl outline-none flex items-center text-white font-bold shadow-md shadow-primary">
-          <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
-          </svg>
-          Download my CV
-        </button>
-      </a>
-    </div>
-  </div>
-  <div className="ml-10">
-  <img src={Mee} alt="Description de votre image" style={{ borderRadius: '20px' }} />
-  </div>
-</motion.div>
+        <div>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          >
+            Hi, I'm Adam Serghini, a software engineering student & master M2 in artificial intelligence. I am a passionate developer in full stack development and data science. I am actively learning various programming languages, frameworks, as well as artificial intelligence, machine learning, deep learning, Big Data, and Data Mining techniques. I enjoy taking on challenges in web application creation and data analysis. Staying up to date with trends is essential for me.
+          </motion.p>
+          {/* Button to download the CV */}
+          <div className="mt-4">
+            <a href={CV} download="Adam Serghini CV (2).pdf">
+              <button type="submit" className="bg-tertiary py-3 px-8 rounded-xl outline-none flex items-center text-white font-bold shadow-md shadow-primary">
+                <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+                </svg>
+                Download my CV
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className="ml-10">
+          <img src={Mee} alt="Your image description" style={{ borderRadius: '20px' }} />
+        </div>
+      </motion.div>
 
-<div className="mt-20 flex flex-wrap gap-10">
-  {services.map((service, index) => (
-    <ServiceCard key={service.title} index={index} {...service} />
-  ))}
-</div>
-
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </>
   );
 };
